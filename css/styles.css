@@ -1,46 +1,49 @@
 @font-face {
-  font-family: 'psbi';
-  src: url('../fonts/product_sans_bold_italic-webfont.woff2') format('woff2'),
-    url('../fonts/product_sans_bold_italic-webfont.woff') format('woff');
+  font-family: "psbi";
+  src: url("../fonts/product_sans_bold_italic-webfont.woff2") format("woff2"),
+    url("../fonts/product_sans_bold_italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'psb';
-  src: url('../fonts/product_sans_bold-webfont.woff2') format('woff2'),
-    url('../fonts/product_sans_bold-webfont.woff') format('woff');
+  font-family: "psb";
+  src: url("../fonts/product_sans_bold-webfont.woff2") format("woff2"),
+    url("../fonts/product_sans_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'psi';
-  src: url('../fonts/product_sans_italic-webfont.woff2') format('woff2'),
-    url('../fonts/product_sans_italic-webfont.woff') format('woff');
+  font-family: "psi";
+  src: url("../fonts/product_sans_italic-webfont.woff2") format("woff2"),
+    url("../fonts/product_sans_italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'ps';
-  src: url('../fonts/product_sans_regular-webfont.woff2') format('woff2'),
-    url('../fonts/product_sans_regular-webfont.woff') format('woff');
+  font-family: "ps";
+  src: url("../fonts/product_sans_regular-webfont.woff2") format("woff2"),
+    url("../fonts/product_sans_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 
 body {
   font-family: ps;
 }
 
+button:focus{
+  outline: none;
+}
+button{
+  border: none !important;
+}
+
 .styled-bg {
-  background-image: url("../img/auth-bg.svg");
-  background-color: #672A4E;
+  background-image: url("../__MACOSX/img/auth-bg.svg");
+  background-color: #672a4e;
 }
 
 .full-height {
@@ -48,7 +51,10 @@ body {
   overflow-x: hidden !important;
 }
 
-.auth-wrapper {}
+
+
+.auth-wrapper {
+}
 
 .auth-header {
   font-family: "psb";
@@ -56,7 +62,23 @@ body {
   font-weight: bold;
   font-size: 44px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.banner-g-button:hover{
+  text-decoration: none;
+
+}
+
+#header .theToggler .button-toggler{
+  width: 25px;
+  height: 2px;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  margin-top: 5px;
+  border-radius: 2px;
+
 }
 
 .auth-rider {
@@ -65,7 +87,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .login-form-wrapper {
@@ -87,11 +109,10 @@ body {
   font-weight: bold;
   font-size: 30px;
   line-height: 60px;
-  color: #2B2B2B;
+  color: #2b2b2b;
   font-family: psb;
   margin-bottom: 64px;
 }
-
 
 .google-img {
   width: 24px;
@@ -99,7 +120,7 @@ body {
 }
 
 .google-wrapper {
-  background: #FFE0E8;
+  background: #ffe0e8;
   border-radius: 8px;
   padding: 16px 20px;
   overflow: auto;
@@ -110,7 +131,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
 .b-form input {
@@ -137,7 +158,7 @@ body {
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
-  color: #2B2B2B;
+  color: #2b2b2b;
   display: block;
 }
 
@@ -161,7 +182,7 @@ body {
 }
 
 .b-divider .line hr {
-  background-color: #C8C8C8;
+  background-color: #c8c8c8;
   height: 0.5px;
   width: 100%;
 }
@@ -172,11 +193,12 @@ body {
 }
 
 .input-group-text {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-left: none;
 }
 
-.input-group input {}
+.input-group input {
+}
 
 .border-right-none {
   border-right: 0 !important;
@@ -188,7 +210,7 @@ body {
 
 .one-liner .checkbox {
   width: 16px;
-  border: 1px solid #C5D0DB;
+  border: 1px solid #c5d0db;
   border-radius: 3px;
   height: 20px;
   margin-right: 12px;
@@ -208,12 +230,12 @@ body {
 }
 
 .checkbox:checked {
-  color: #672A4E;
-  background-color: #672A4E;
+  color: #672a4e;
+  background-color: #672a4e;
 }
 
 .forgot-password {
-  color: #CE0639;
+  color: #ce0639;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -225,17 +247,19 @@ body {
   margin-top: 52px;
 }
 
-.g-btn, .g-button {
-  background-color: #CE0639;
+.g-btn,
+.g-button {
+  background-color: #ce0639;
   border: none;
   border-radius: 7px;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   padding: 14px;
+  
 }
 
 .no-account {
@@ -253,12 +277,12 @@ body {
 .forgot-password:hover,
 .remember-me a,
 .remember-me a:hover {
-  color: #CE0639;
+  color: #ce0639;
   text-decoration: none;
 }
 
 .banner {
-  background-image: url('../img/banner.jpeg');
+  background-image: url("../__MACOSX/img/banner.jpeg");
   height: 697px;
   background-size: cover;
   background-position: 50%;
@@ -266,7 +290,12 @@ body {
 
 .banner .gradient {
   height: 100%;
-  background: linear-gradient(89.69deg, rgba(95, 86, 86, 0.8) 0.21%, rgba(126, 119, 119, 0.80443) 29.72%, rgba(255, 255, 255, 0) 55.34%);
+  background: linear-gradient(
+    89.69deg,
+    rgba(95, 86, 86, 0.8) 0.21%,
+    rgba(126, 119, 119, 0.80443) 29.72%,
+    rgba(255, 255, 255, 0) 55.34%
+  );
 }
 
 .gradient-row {
@@ -284,7 +313,7 @@ body {
   font-weight: normal;
   font-size: 44px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .description .rider {
@@ -292,7 +321,7 @@ body {
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 24px;
 }
 
@@ -309,13 +338,11 @@ body {
 
 nav .logo {
   float: left;
-  
 }
 
 nav ul {
   float: right;
   list-style: none;
-  
 }
 
 nav ul li {
@@ -327,14 +354,15 @@ nav ul li {
   font-weight: normal;
   font-size: 16px;
   line-height: 48px;
-  color: #404C60 !important;
+  color: #404c60 !important;
 }
 
 .navbar-nav li .g-button {
   margin-top: 0 !important;
 }
 
-.gradient .row, .header .row {
+.gradient .row,
+.header .row {
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -345,11 +373,11 @@ nav ul li {
   font-size: 44px;
   line-height: 60px;
   font-family: psb;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
 .solution {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 40px rgba(121, 102, 107, 0.1);
   border-radius: 20px;
   padding: 52px 36px;
@@ -359,74 +387,60 @@ nav ul li {
   margin-top: 72px;
 }
 
-
 /* The Three Columns */
-
-#about .theFirstCol 
-#about .theSedondCol
-#about .theThirdCol{
+/* 
+#about .our-solutionl {
   margin: 0;
-  padding: 0;
-}
+  padding: 20px;
+} */
 
-.theRow{
+.theRow {
   margin-top: 20px;
   margin-bottom: 50px;
 }
 
-#about .theFirstCol-div, 
-#about .theSecondCol-div,
-#about .theThirdCol-div{
+#about .our-solution {
   min-height: 360px;
   background-color: #fff;
-  margin-top: 28px;
-  width: 100%;
-  margin: auto;
+  margin-top: 20px;
   border-radius: 20px;
-  padding-bottom: 50px;
+  padding: 40px;
   box-shadow: 0px 10px 40px rgba(121, 102, 107, 0.1);
 }
 
-
-.theRow p{
-  color: #5B5B5B;
+.theRow p {
+  color: #5b5b5b;
   font-size: 20px;
   font-weight: bold;
   padding-top: 34px;
-  width: 86%;
-  margin-left: auto;
 }
 
-.theRow .about-content{
-  width: 86%;
+.theRow .about-content {
   text-align: left;
-  margin-left: auto;
   font-weight: 300;
   font-size: 16px;
   font-style: normal;
   color: #979797;
 }
 
-.theRow .about-svg{
+.theRow .about-svg {
   width: 86%;
-  margin-left: auto;
-  padding-top: 40px;
-  
 }
 
 /* The ADVERT SECTION */
 
-#Advert{
+#Advert {
   margin-bottom: 50px;
+  padding: 20px;
 }
 
-#Advert .Second-Col-Advert .getting-started{
-  color: #2B2B2B;
+#Advert .Second-Col-Advert .getting-started {
+  color: #2b2b2b;
   font-size: 44px;
   font-weight: bold;
 }
 
-#Advert .Second-Col-Advert .getting-started-subsection{
+#Advert .Second-Col-Advert .getting-started-subsection {
   font-weight: 300;
   font-size: 18px;
   color: #979797;
@@ -436,7 +450,7 @@ nav ul li {
   opacity: 0.8;
 }
 
-.advert-account p{
+.advert-account p {
   width: 50%;
   display: inline-block;
   margin-left: 42px;
@@ -446,11 +460,11 @@ nav ul li {
   /* position: absolute; */
 }
 
-.advert-account img{
+.advert-account img {
   padding-top: 5px;
 }
 
-.advert-account .advert-head{
+.advert-account .advert-head {
   font-style: bold;
   font-size: 20px;
   color: #5b5b5b;
@@ -459,23 +473,23 @@ nav ul li {
   margin-left: auto;
   font-weight: bolder;
 }
-.advert-account .advert-content-container{
+.advert-account .advert-content-container {
   margin-top: 12px;
 }
 
-#Advert .the-image-box{
+#Advert .the-image-box {
   /* border: 1px solid red; */
   position: relative;
   min-height: 800px;
   margin-top: 50px;
 }
 
-#Advert .first-img-box{
+#Advert .first-img-box {
   width: 90%;
   min-height: 600px;
   /* border: 1px solid red; */
   margin-top: 60px;
-  background-image: url(../img/A\ baker.jpg);
+  background-image: url("../__MACOSX/img/A\ baker.jpg");
   background-position: 75% 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -484,63 +498,253 @@ nav ul li {
   left: 0;
   z-index: 1;
   border-radius: 20px;
-  
-  
 }
 
-#Advert .second-img-box{
-    width: 90%;
-    min-height: 600px;
-    /* border: 1px solid red; */
-    margin-top: 60px;
-    background-image: url(../svg/rectangle.svg);
-    background-position: 75% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 8%;
-    left: 30px;
-    border-radius: 20px;
-
+#Advert .second-img-box {
+  width: 90%;
+  min-height: 600px;
+  /* border: 1px solid red; */
+  margin-top: 60px;
+  background-image: url("../__MACOSX/img/auth-bg.svg");
+  background-position: 75% 0;
+  background-color: #672a4e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 8%;
+  left: 30px;
+  border-radius: 20px;
 }
 
 /* The price-plan- section */
 
-#price-plan .price-plan-container{
+#price-plan .price-plan-container {
   background: #ce0639;
-  min-height: 250px;
+  background-image: url("../__MACOSX/img/auth-bg.svg");
+  max-height: 300px;
   margin-top: 50px;
   text-align: center;
 }
 
-#price-plan .flexible{
+#price-plan .flexible {
   margin-top: 50px !important;
   padding-top: 50px;
-  font-size: 40px ;
+  font-size: 40px;
   color: #fff;
   font-weight: 700;
 }
 
-#price-plan .choose-plan{
+#price-plan .choose-plan {
   font-weight: 400;
   font-size: 20px;
   color: #fff;
   margin-top: 20px;
+}
+
+#price-plan .tab-of-price {
   position: relative;
-
+  top: 30px;
 }
 
-#price-plan .tab-of-price{
-  position: absolute;
-  top: 100px;
-}
-
-#price-plan .price-plan-advertiser{
+#price-plan .price-plan-advertiser {
   color: black;
   border-radius: 14px;
-  background-color: red;
-  box-shadow: 0px,
-  10px rgba(121, 102, 107, 0.1);
+  background-color: yellow;
+  box-shadow: 0px, 10px rgba(121, 102, 107, 0.1);
 }
 
+#price-plan .paster-background {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0px 10px 40px rgba(121, 102, 107, 0.1);
+  color: black;
+  padding: 30px;
+  /* margin: 20px; */
+  text-align: left;
+}
+
+#price-plan .paster-background .month {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #2b2b2b;
+}
+
+#price-plan .paster-background p {
+  font-weight: 300;
+  color: #979797;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+#price-plan .paster-background .amount {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #2b2b2b;
+  margin-bottom: 4px;
+}
+
+#price-plan .paster-background .bill {
+  font-size: 12px;
+  font-weight: 300;
+  color: #979797;
+  margin-bottom: 35px;
+}
+
+#price-plan .paster-background .theSpan {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #979797;
+}
+
+#price-plan .paster-background .features {
+  margin-bottom: 45px;
+}
+
+#price-plan .paster-background .paster-background-button {
+  width: 90%;
+  border-radius: 7px;
+  background-color: #ce0639;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  height: 45px;
+  margin-bottom: 40px;
+}
+
+@media(max-width: 991px){
+  body{
+    overflow-x: hidden;
+  }
+  #navbarNav ul{
+    margin-right: 15%;
+  }
+  
+  #price-plan{
+    margin: 20px;
+  }
+  .paster-background{
+    margin-top: 20px;
+  }
+  .your-bakery-button{
+    width: 25% !important;
+  }
+  
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content .address{
+    padding: 0px;
+  }
+  .nav-item{
+    /* color: black; */
+  }
+  
+  
+  
+}
+
+@media(max-width: 669px){
+  #navbarNav{
+    margin-right: 7% !important;
+  }
+  #navbarNav ul{
+    margin-right: 0%;
+  }
+
+}
+
+@media(min-width:991px){
+  .header ul{
+    display: visible;
+  }
+  .header .theNavbar button{
+    display: visible;
+  }
+  .theTogglerButton .toggler-button{
+    display: none;
+  }
+}
+
+
+.your-bakery{
+  text-align: center;
+}
+
+.your-bakery p{
+  font-weight: 700;
+  font-size: 44px;
+  font-style: normal;
+  color: #2b2b2b;
+  margin-top: 60px;
+
+}
+
+.your-bakery .small-p{
+  font-weight: 300;
+  font-size: 16px;
+  color: #979797;
+  margin-bottom: 20px;
+
+}
+
+#price-plan{
+  margin-bottom: 20px;
+}
+
+#footer{
+  background-color: #672a4e;
+  background-image: url('../__MACOSX/img/auth-bg.svg');
+  text-align: left;
+  padding-top:50px;
+}
+
+#footer .number {
+  margin: 12px ;
+}
+
+#footer .number p{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+#footer .address{
+  padding-top: 45px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.theTogglerButton{
+  display: flex;
+  flex-direction: column;
+}
+
+.theTogglerButton .toggler-button{
+  height: 5px;
+  width: 25px;
+  background-color:black;
+  margin-top: 4px;
+}
+
+/* STYLING OF THE AND THE NAVBAR */
+.theNav{
+  background-color: #fff;
+  padding: 0 !important;
+}
+#header{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.navbar-icon{
+  background-color:#2b2b2b;
+  
+}
 
