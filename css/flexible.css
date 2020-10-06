@@ -37,10 +37,10 @@
 
 .theRow{
     background-color: #672a4e;
-    background-image: url("../svg/flexible-breadpattern.svg");
+    background-image: url("../img/auth-bg.svg");
     /* background-repeat: no-repeat; */
     /* background-position: center; */
-    background-size: cover;
+    background-size: contain;
     /* height: 200px; */
 }
 .theRow .theHeader{

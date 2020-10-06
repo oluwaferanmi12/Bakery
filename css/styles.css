@@ -37,12 +37,13 @@ body {
 button:focus {
   outline: none;
 }
+
 button {
   border: none !important;
 }
 
 .styled-bg {
-  background-image: url("../__MACOSX/img/auth-bg.svg");
+  background-image: url("../img/auth-bg.svg");
   background-color: #672a4e;
 }
 
@@ -51,10 +52,12 @@ button {
   overflow-x: hidden !important;
 }
 
-.auth-wrapper {
-}
 
-.auth-header {
+
+.auth-wrapper {}
+
+.auth-header,
+.auth-mini-header {
   font-family: "psb";
   font-style: normal;
   font-weight: bold;
@@ -63,8 +66,13 @@ button {
   color: #ffffff;
 }
 
+.auth-mini-header {
+  font-size: 24px;
+}
+
 .banner-g-button:hover {
   text-decoration: none;
+
 }
 
 #header .theToggler .button-toggler {
@@ -75,6 +83,7 @@ button {
   flex-direction: column;
   margin-top: 5px;
   border-radius: 2px;
+
 }
 
 .auth-rider {
@@ -140,7 +149,8 @@ button {
 }
 
 .b-form input::placeholder {
-  color: #979797;
+  color: #e4e4e4;
+  font-family: ps;
 }
 
 .b-form input:focus {
@@ -193,8 +203,7 @@ button {
   border-left: none;
 }
 
-.input-group input {
-}
+.input-group input {}
 
 .border-right-none {
   border-right: 0 !important;
@@ -255,6 +264,7 @@ button {
   color: #ffffff;
   text-align: center;
   padding: 14px;
+
 }
 
 .no-account {
@@ -277,7 +287,7 @@ button {
 }
 
 .banner {
-  background-image: url("../__MACOSX/img/banner.jpeg");
+  background-image: url("../img/banner.jpeg");
   height: 697px;
   background-size: cover;
   background-position: 50%;
@@ -285,12 +295,10 @@ button {
 
 .banner .gradient {
   height: 100%;
-  background: linear-gradient(
-    89.69deg,
-    rgba(95, 86, 86, 0.8) 0.21%,
-    rgba(126, 119, 119, 0.80443) 29.72%,
-    rgba(255, 255, 255, 0) 55.34%
-  );
+  background: linear-gradient(89.69deg,
+      rgba(95, 86, 86, 0.8) 0.21%,
+      rgba(126, 119, 119, 0.80443) 29.72%,
+      rgba(255, 255, 255, 0) 55.34%);
 }
 
 .gradient-row {
@@ -468,6 +476,7 @@ nav ul li {
   margin-left: auto;
   font-weight: bolder;
 }
+
 .advert-account .advert-content-container {
   margin-top: 12px;
 }
@@ -484,7 +493,7 @@ nav ul li {
   min-height: 600px;
   /* border: 1px solid red; */
   margin-top: 60px;
-  background-image: url("../__MACOSX/img/A\ baker.jpg");
+  background-image: url("../img/A\ baker.jpg");
   background-position: 75% 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -500,7 +509,7 @@ nav ul li {
   min-height: 600px;
   /* border: 1px solid red; */
   margin-top: 60px;
-  background-image: url("../__MACOSX/img/auth-bg.svg");
+  background-image: url("../img/auth-bg.svg");
   background-position: 75% 0;
   background-color: #672a4e;
   background-repeat: no-repeat;
@@ -515,7 +524,7 @@ nav ul li {
 
 #price-plan .price-plan-container {
   background: #ce0639;
-  background-image: url("../__MACOSX/img/auth-bg.svg");
+  background-image: url("../img/auth-bg.svg");
   max-height: 300px;
   margin-top: 50px;
   text-align: center;
@@ -598,8 +607,8 @@ nav ul li {
 }
 
 #price-plan .paster-background .paster-background-button {
-  width: 90%;
   border-radius: 7px;
+  width: 100%;
   background-color: #ce0639;
   border: none;
   color: white;
@@ -607,13 +616,19 @@ nav ul li {
   font-size: 15px;
   text-align: center;
   height: 45px;
-  margin-bottom: 40px;
 }
 
-@media (max-width: 991px) {
+#myModal .modal-dialog {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+@media(max-width: 991px) {
   body {
     overflow-x: hidden;
   }
+
   #navbarNav ul {
     margin-right: 15%;
   }
@@ -621,9 +636,11 @@ nav ul li {
   #price-plan {
     margin: 20px;
   }
+
   .paster-background {
     margin-top: 20px;
   }
+
   .your-bakery-button {
     width: 25% !important;
   }
@@ -633,34 +650,50 @@ nav ul li {
     flex-direction: column;
     text-align: center;
   }
+
   .footer-content .address {
     padding: 0px;
   }
+
   .nav-item {
     /* color: black; */
   }
+
+
+
 }
 
-@media (max-width: 669px) {
+
+
+@media(max-width: 669px) {
   #navbarNav {
     margin-right: 7% !important;
   }
+
   #navbarNav ul {
     margin-right: 0%;
   }
+
 }
 
-@media (min-width: 991px) {
+@media(min-width:991px) {
+  .sub-info {
+    padding-top: 150px;
+  }
+
   .header ul {
     display: visible;
   }
+
   .header .theNavbar button {
     display: visible;
   }
+
   .theTogglerButton .toggler-button {
     display: none;
   }
 }
+
 
 .your-bakery {
   text-align: center;
@@ -672,6 +705,7 @@ nav ul li {
   font-style: normal;
   color: #2b2b2b;
   margin-top: 60px;
+
 }
 
 .your-bakery .small-p {
@@ -679,6 +713,7 @@ nav ul li {
   font-size: 16px;
   color: #979797;
   margin-bottom: 20px;
+
 }
 
 #price-plan {
@@ -687,7 +722,7 @@ nav ul li {
 
 #footer {
   background-color: #672a4e;
-  background-image: url("../__MACOSX/img/auth-bg.svg");
+  background-image: url('../img/auth-bg.svg');
   text-align: left;
   padding-top: 50px;
 }
@@ -725,6 +760,7 @@ nav ul li {
   background-color: #fff;
   padding: 0 !important;
 }
+
 #header {
   position: sticky;
   top: 0;
@@ -733,4 +769,5 @@ nav ul li {
 
 .navbar-icon {
   background-color: #2b2b2b;
+
 }
