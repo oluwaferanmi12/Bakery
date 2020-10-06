@@ -1,0 +1,172 @@
+
+@font-face {
+    font-family: "psbi";
+    src: url("../fonts/product_sans_bold_italic-webfont.woff2") format("woff2"),
+        url("../fonts/product_sans_bold_italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "psb";
+    src: url("../fonts/product_sans_bold-webfont.woff2") format("woff2"),
+        url("../fonts/product_sans_bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "psi";
+    src: url("../fonts/product_sans_italic-webfont.woff2") format("woff2"),
+        url("../fonts/product_sans_italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ps";
+    src: url("../fonts/product_sans_regular-webfont.woff2") format("woff2"),
+        url("../fonts/product_sans_regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.theRow{
+    background-color: #672a4e;
+    background-image: url("../svg/flexible-breadpattern.svg");
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-size: cover;
+    /* height: 200px; */
+}
+.theRow .theHeader{
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    /* padding-bottom: 50px; */
+}
+
+.theRow .space-giver{
+    flex: 1;
+}
+
+.theFlexible{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.theFlexible .content-1{
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    font-family: ps;
+    letter-spacing: 0.04em;
+}
+
+.theFlexible .content-2{
+    font-size: 20px;
+    font-weight: normal;
+    font-family: ps;
+    color: white;
+    width: 28%;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 100px;
+    
+}
+
+@media(max-width: 991px){
+    .theHeader{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #advert-paster {
+        padding: 12px;
+    }
+    .paster-background {
+        margin: 12px;
+    }
+}
+
+.tab-of-price {
+    position: relative;
+    top: -60px;
+}
+
+
+
+
+
+.price-plan-advertiser {
+    color: black;
+    border-radius: 14px;
+    background-color: yellow;
+    box-shadow: 0px, 10px rgba(121, 102, 107, 0.1);
+}
+
+.paster-background {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0px 10px 40px rgba(121, 102, 107, 0.1);
+    color: black;
+    padding: 30px;
+    /* margin: 20px; */
+    text-align: left;
+}
+
+.paster-background .month {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2b2b2b;
+}
+
+.paster-background p {
+    font-weight: 300;
+    color: #979797;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.paster-background .amount {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #2b2b2b;
+    margin-bottom: 4px;
+}
+
+.paster-background .bill {
+    font-size: 12px;
+    font-weight: 300;
+    color: #979797;
+    margin-bottom: 35px;
+}
+
+.paster-background .theSpan {
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #979797;
+}
+
+.paster-background .features {
+    margin-bottom: 45px;
+}
+
+.paster-background .paster-background-button {
+    width: 90%;
+    border-radius: 7px;
+    background-color: #ce0639;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    height: 45px;
+    margin-bottom: 40px;
+}
