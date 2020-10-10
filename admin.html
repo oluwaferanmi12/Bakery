@@ -74,21 +74,21 @@
                     <p  class="admin-content">It’s time to set up your bakery modules and get started with transforming your bakery, click on any card to get started.</p>
                 </div>
                 <div class="col-lg-4" >
-                    <div class="admin-container">
+                    <div class="admin-container" id="team">
                         <div class="admin-container-img"><img src="./svg/invite.svg" alt=""></div>
                         <p>Invite Team</p>
                         <div class="admin-container-theContent">Invite your bakery team members, assign roles and grant user privileges</div>
                     </div>
                 </div>
                 <div class="col-lg-4" >
-                    <div class="admin-container">
-                        <div class="admin-container-img"><img src="./svg/setup.svg" alt=""></div>
+                    <div class="admin-container" id="setup">
+                        <div class="admin-container-img" ><img src="./svg/setup.svg" alt=""></div>
                         <p>Set up production</p>
                         <div class="admin-container-theContent">Define your bakery recipes, to allow account of all bakery products.</div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="admin-container">
+                    <div class="admin-container" id="inventory">
                         <div class="admin-container-img"><img src="./svg/inventory.svg" alt=""></div>
                         <p>Set up Inventory</p>
                         <div class="admin-container-theContent">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="admin-container">
+                    <div class="admin-container" id="customers">
                         <div class="admin-container-img"><img src="./svg/invite.svg" alt="" ></div>
                         <p>Create Customers</p>
                         <div class="admin-container-theContent">
@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="admin-container">
+                    <div class="admin-container"  id="accounting">
                         <div class="admin-container-img"><img src="./svg/bag.svg" alt=""></div>
                         <p>Set up accounting</p>
                         
@@ -124,4 +124,22 @@
 
     </div>
 </body>
+<script>
+    const icons = [
+        {id: 'accounting', icon: 'bag'},
+        {id: 'customers', icon: 'invite'},
+        {id: 'inventory' , icon: 'inventory'},
+        {id: 'setup' , icon: 'setup'},
+        {id: 'team' ,icon: 'invite'}
+    ]
+
+    icons.map((item) => {
+        $(`#${item.id}`).hover(() => {
+            $(`#${item.id} img`).attr('src', `./svg/${item.icon}-white.svg`);
+        })
+        $(`#${item.id}`).mouseleave(() => {
+            $(`#${item.id} img`).attr('src', `./svg/${item.icon}.svg`);
+        })
+    })
+</script>
 </html>
